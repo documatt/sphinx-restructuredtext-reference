@@ -2,4 +2,5 @@
 .vscode
 venv
 build
+_build
 public
