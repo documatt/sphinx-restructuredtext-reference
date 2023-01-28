@@ -54,7 +54,7 @@ rst_epilog = f'''
 # a list of builtin themes.
 # html_theme = "learn_basic"
 
-html_baseurl = 'https://documatt.com/restructuredtext'
+html_baseurl = 'https://documatt.com/restructuredtext-reference'
 
 html_title = project
 

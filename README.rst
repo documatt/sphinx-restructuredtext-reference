@@ -11,7 +11,7 @@
 Example based gentle reference of the reStructuredText and Sphinx syntax, directives, roles and common issues. It demonstrates almost all the markup making it also good for testing Sphinx themes. Free and open-source.
 
 * source code: https://github.com/documatt/sphinx-restructuredtext-reference where issues and contributions are welcome
-* homepage: https://documatt.com/restructuredtext
+* homepage: https://documatt.com/restructuredtext-reference
 
 *****
 About
@@ -19,7 +19,7 @@ About
 
 |project| is a showcase of `Sphinx <https://www.sphinx-doc.org/>`_ documentation project possibilities. It demonstrates almost all standard reStructuredText syntax with Sphinx additions.
 
-|project| is useful if you are creating a `custom Sphinx HTML theme <https://techwriter.documatt.com/sphinx-theming/index.html>`_ and want to be sure your theme style doesn't forgot to style some part of Sphinx generated HTML.
+|project| is useful if you are creating a `custom Sphinx HTML theme <https://documatt.com/blog/sphinx-theming/index.html>`_ and want to be sure your theme style doesn't forgot to style some part of Sphinx generated HTML.
 
 .. tip:: Checkout also my `Sphinx Themes Collection <https://documatt.gitlab.io/sphinx-themes/>`_ suitable both for documentation and prose.
 
