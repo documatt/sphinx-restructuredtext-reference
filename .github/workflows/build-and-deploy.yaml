@@ -34,11 +34,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-          cache: 'pip'
 
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements/sphinx.txt -r requirements/extensions.txt
 
-      - run: sphinx-build -b html -q source public
+      - run: sphinx-build -b html -q source build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -47,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'public'
+          path: 'build'
 
       - name: Deploy to GitHub Pages
         id: deployment
