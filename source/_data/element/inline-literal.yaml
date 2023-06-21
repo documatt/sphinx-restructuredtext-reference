@@ -91,3 +91,21 @@ examples:
       Any\ ``array`` will suffice.
 
       Any\ ``array``\ s will suffice.
+
+issues:
+  - name: Don't interchange ````` and ``````
+    desc: |
+      There is a big difference between ```code example``` and ````code example````! Only the latter with double `````` is inline code example! Text wrapped in single ````` is so-called default role interpreted text.
+
+      This is tricky part of |rst| because in Markdown, code examples are in wrapped in single backtick.
+
+      .. code-block::
+         :class: bad
+
+         I am `not a code example` anyway.
+
+      Fixed:
+
+      .. code-block::
+
+         I am ``a code example`` anyway.
