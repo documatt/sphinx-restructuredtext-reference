@@ -17,8 +17,8 @@ sys.path.insert(0, os.path.abspath('./_extensions'))
 # -- Project information -----------------------------------------------------
 
 project = 'reStructuredText and Sphinx Reference'
-copyright = '2021, Matt from Documatt'
-author = 'Matt from Documatt'
+copyright = '2023, Documatt.com'
+author = 'Matt Warrick and contributors'
 
 
 # -- General configuration ---------------------------------------------------
@@ -54,7 +54,7 @@ rst_epilog = f'''
 # a list of builtin themes.
 # html_theme = "learn_basic"
 
-html_baseurl = 'https://documatt.com/restructuredtext-reference'
+html_baseurl = 'https://documatt.com/restructuredtext-reference/'
 
 html_title = project
 
@@ -63,7 +63,7 @@ html_theme = "sphinx_documatt_theme"
 html_logo = '../logo.svg'
 
 html_theme_options = {
-    'motto': 'Example based gentle reference of the reStructuredText and <a href="https://www.sphinx-doc.org">Sphinx</a> syntax, directives, roles and common issues. It demonstrates almost all the markup making it also good for testing Sphinx themes. Free and <a href="https://github.com/documatt/sphinx-restructuredtext-reference">open-source</a>.',
+    'motto': 'Example based gentle reference of the reStructuredText and <a href="https://www.sphinx-doc.org">Sphinx</a> syntax, directives, roles and common issues. It demonstrates almost all the markup making it also good for testing Sphinx themes. Free and <a href="https://github.com/documatt/restructuredtext-reference/">open-source</a>.',
     'header_logo_style': 'width: 4rem;',
     'footer_logo_style': 'width: 4rem;',
 }

@@ -10,7 +10,7 @@ Guide to |rst| and Sphinx
    :hidden:
    :glob:
 
-   intro/syntax
+   intro/overview
    intro/directives-roles
    intro/sphinx-docutils
    intro/tools
