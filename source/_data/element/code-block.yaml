@@ -1,6 +1,8 @@
 title: code-block
 
 desc: |
+  .. _code-block-directive:
+
   Code examples blocks with code-block offers much more options that plain :doc:`literal-block`. It allows syntax highlighting, line numbering, emphasis particular lines and using captions.
 
 collections:
