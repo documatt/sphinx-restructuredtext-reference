@@ -36,7 +36,7 @@ examples:
     desc: |
       The plain literal block may not suffice for you. For example, if you want syntax highlighting, see :doc:`/element/code-block`.
 
-      Others may prefer putting code examples into external files and including them with :doc:`/element/literalinclude`.
+      Others may prefer putting code examples into external files and including them with iteralinclude.
 
 issues:
   - name: No empty line between ``::`` and content

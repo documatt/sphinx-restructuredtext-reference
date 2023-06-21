@@ -2,5 +2,4 @@ elements:
   - seealso
   - toctree
   - file
-  - literalinclude
   - code-block
