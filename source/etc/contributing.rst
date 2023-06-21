@@ -2,33 +2,42 @@
 Contributing
 ############
 
-Did you find a typo or bad information? Help by contributing to this project. Fork our `GitLab repository <https://gitlab.com/documatt/sphinx-reference-project>`_ and propose improvement in merge request, or file an issue. On this page, you will find how is project files organized.
+****************
+Propose a change
+****************
 
-**********************
+Did you find a typo or bad information? Help by contributing to the project. Fork `GitHub repository <https://github.com/documatt/sphinx-restructuredtext-reference>`_ and propose improvement in a pull request, or file an issue.
+
+**************
+File structure
+**************
+
+Bellow, you will find project files organization.
+
 On-disk file structure
-**********************
+======================
 
 ::
 
-   originals/ - diagrams and illustration source files (.afdesign)
+   originals/               diagrams and illustration source files (.afdesign)
    source/
-       _data/ - descriptions (actual content)
-           collection/ - YAMLs describing collections
-           element/ - YAMLs descripting elements
-           snippets/ - YAMLs describing snippets
-       _static/ - theme overrides
-       _templates/ - sphinxcontrib.datatemplates' templates (.rst.jinja),
-                     Sphinx Theme templates (.html), and
-                     description YAML templates (.yaml.jinja)
-       element/ - RST skeletons for elements
-       example/ - RST examples that must be open in the
-                  the separate page (e.g., examples of sections)
-   index.rst - master doc
-   *.rst - RST collection skeletons
+       _data/               descriptions (actual content)
+           collection/      YAMLs describing collections
+           element/         YAMLs descripting elements
+           snippets/        YAMLs describing snippets
+       _static/             theme overrides
+       _templates/          sphinxcontrib.datatemplates' templates (.rst.jinja),
+                            Sphinx Theme templates (.html), and
+                            description YAML templates (.yaml.jinja)
+       element/             RST skeletons for elements
+       example/             RST examples that must be open in the
+                            the separate page (e.g., examples of sections)
+   index.rst                master doc
+   *.rst                    RST collection skeletons
 
-Project uses `Sphinx documentation <https://www.sphinx-doc.org/>`_ and amazing `sphinxcontrib.datatemplates extension <https://pypi.org/project/sphinxcontrib.datatemplates/>`_.
+The project uses `Sphinx documentation <https://www.sphinx-doc.org/>`_ and amazing `sphinxcontrib.datatemplates extension <https://pypi.org/project/sphinxcontrib.datatemplates/>`_.
 
-Sphinx Reference knows only two types of descriptions:
+The project knows only two types of descriptions:
 
 * a Sphinx element
 * a collection of Sphinx elements
@@ -37,11 +46,10 @@ Website is generated from YAML data files and Jinja templates creating RST files
 
 .. important:: Data files are expected to have ``.yaml`` extension. ``.yml`` will cause error.
 
-Skeleton contains no or minimal real content (e.g. only a introduction to a topic). Their purpose is to glue actual descriptions from YAMLs in ``_data/`` into sphinxcontrib.datatemplates' templates in ``_templates/``.
+Skeleton contains no or minimal real content (e.g., only a introduction to a topic). Their purpose is to glue actual descriptions from YAMLs in ``_data/`` into sphinxcontrib.datatemplates' templates in ``_templates/``.
 
-********
 Elements
-********
+========
 
 Element on the disk comprises:
 
@@ -68,16 +76,15 @@ Example:
 .. literalinclude:: /_data/element/hint.yaml
 
 How to add element
-==================
+------------------
 
 #. Create element description ``_data/element/<element-name>.yaml``. Template is at ``_templates/element.yaml.jinja``.
 #. Add element to ``collections`` attribute in YAML. Items are filenames (without suffix) from ``source/_data/_collection``.
 #. Add element to list in ``_data/collection/<collection-name>.yaml``. Items are filenames (without suffix) of element skeleton.
 #. Create element skeleton ``element/<element-name>.yaml``. Template is at ``_templates/element-skeleton.rst.jinja``.
 
-***********
 Collections
-***********
+===========
 
 Collection on the disk comprises:
 
@@ -102,18 +109,17 @@ Collection on the disk comprises:
        :template: collection.rst.jinja
 
 How to add collection
-=====================
+---------------------
 
 #. Create collection description ``_data/collection/<collection-name>.yaml``. Template is at ``_templates/collection.yaml.jinja``. Content are elements belonging to it.
 #. Create element skeleton ``<collection-name>.rst``. Template is at ``_templates/collection-skeleton.rst.jinja``.
 #. Add element skeleton to toctree in master document ``index.rst``.
 
-***************
 Tips and tricks
-***************
+===============
 
 Dump variable
-=============
+-------------
 
 If you want to see that is actually in the variable, print it as ``<pre>``. E.g.::
 
@@ -132,7 +138,7 @@ Or, repeat full problematic part::
        </pre>
 
 Render to file
-==============
+--------------
 
 Useful for templates debugging.
 
