@@ -110,8 +110,8 @@ issues:
 
             Nobody knows what highlight language will be used.
 
-      Usually default highlight mode for Sphinx is ``python3``. It's better to always specify language with every code-block or turn off syntax highlighting in :ref:`conf.py <conf-py>` with::
+      Usually default highlight mode for Sphinx is ``python3``. It's better to always specify language with every code-block or turn off syntax highlighting in ``conf.py`` with::
 
         highlight_language = 'none'
 
-      See more at `Techwriter at work <https://techwriter.documatt.com/2021/sphinx-conf-py-tips.html#turn-off-or-set-different-default-syntax-highlighting>`_ blog.
+      See more at `Techwriter at work <https://documatt.com/blog/2021/sphinx-conf-py-tips.html#turn-off-or-set-different-default-syntax-highlighting>`_ blog.

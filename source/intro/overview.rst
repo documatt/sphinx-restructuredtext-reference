@@ -43,7 +43,7 @@ Blank lines are important. For example, they separate :doc:`/element/paragraph/`
 .. datatemplate:yaml:: /_data/snippet/rst-blank-lines1.yaml
    :template: snippet.rst.jinja
 
-In normal text, multiple successive blank lines are considered as a single blank line. They are only preserved in the :ref:`literal blocks <literal-block>`.
+In normal text, multiple successive blank lines are considered as a single blank line. They are only preserved in the :doc:`literal blocks </element/literal-block>`.
 
 .. datatemplate:yaml:: /_data/snippet/rst-blank-lines2.yaml
    :template: snippet.rst.jinja

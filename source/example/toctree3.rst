@@ -1,3 +1,5 @@
+:orphan:
+
 Hidden toctree example
 ######################
 
@@ -5,6 +7,6 @@ This page shows toctree directive with ``:hidden:`` option, i.e. except document
 
 .. toctree::
    :hidden:
-      
+
    toctree/europe/czech
    toctree/europe/germany
